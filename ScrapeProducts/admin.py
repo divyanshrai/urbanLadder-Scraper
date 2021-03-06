@@ -37,7 +37,7 @@ class ProductAdmin(admin.ModelAdmin):
         return "\n".join([p.name for p in obj.related_products.all()])
 
     def all_tags(self, obj):
-        return "\n".join([p.tname for p in obj.tags.all()])
+        return "\n".join([p.name for p in obj.tags.all()])
 
 
     list_display = ['pk', 'display_of_small_image', 'name', 'short_html_description', 'category',

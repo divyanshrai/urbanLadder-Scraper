@@ -40,7 +40,7 @@ class Product(models.Model):
     size = models.TextField(null=True, blank=True)
     
     def __str__(self):
-        return self.name + " - " + str(self.u_id)
+        return self.name + " - " + str(self.id)
    
     def imgsrc_html(self, width=150, height=150):
         if height==None: hstr = ''
