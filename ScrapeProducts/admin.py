@@ -24,7 +24,6 @@ class ProductAdmin(admin.ModelAdmin):
     
     def display_of_small_image(self, p_obj):
         p_img_html_str = p_obj.imgsrc_html(width=75, height=75)
-        print(p_img_html_str)
         return mark_safe(p_img_html_str)
     
     def short_html_description(self, p_obj):
